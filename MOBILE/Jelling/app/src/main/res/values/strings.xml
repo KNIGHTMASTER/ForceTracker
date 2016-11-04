@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Force Tracker</string>
+    <string name="manage_force">Manage Force</string>
+    <string name="add_force">Add Force</string>
+    <string name="map_force">Map Force</string>
+
+    <string name="hello_world">Hello World</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Activity Main</string>
+</resources>

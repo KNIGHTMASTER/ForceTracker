@@ -1,0 +1,16 @@
+package com.zisal.jelling.rest.endpoints;
+
+import com.zisal.jelling.rest.backgroundprocess.callback.CallBackUserTracking;
+import com.zisal.jelling.rest.dto.request.impl.usertracking.DTOUserTracking;
+import retrofit.http.Body;
+import retrofit.http.POST;
+
+/**
+ * Created on 6/5/2015 : 2:13 PM.
+ * @author <a href="mailto:fauzi.knightmaster.achmad@gmail.com">Achmad Fauzi</a>
+ */
+public interface EPUserTracking {
+
+    @POST("/update/location")
+    void trackUser(@Body DTOUserTracking dtoUserTracking, CallBackUserTracking callBackUserTracking);
+}
