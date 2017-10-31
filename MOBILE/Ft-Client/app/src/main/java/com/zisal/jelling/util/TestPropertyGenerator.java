@@ -156,6 +156,9 @@ public class TestPropertyGenerator {
         dtoUserTracking.setLatitude(String.valueOf(dtoPhoneNetwork.getLatitude()));
         dtoUserTracking.setLongitude(String.valueOf(dtoPhoneNetwork.getLongitude()));
         dtoUserTracking.setImei(dtoPhoneNetwork.getSimSerial());
+
+        Log.d("IMEI CAPTURED : ", dtoPhoneNetwork.getSimSerial());
+        Log.d("IMSI CAPTURED : ", dtoPhoneNetwork.getDeviceId());
         dtoUserTracking.setImsi(dtoPhoneNetwork.getDeviceId());
         try{
             dtoUserTracking.setAddress(dtoPhoneNetwork.getLocality().concat(" ").concat(dtoPhoneNetwork.getAddress()));
